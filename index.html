@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da forca</title>
+</head>
+<body>
+    <div class="principal-container">
+        <div class="container">
+            <div class="text-box">
+                <h4>A palavra escolhida pertence ao grupo <span id="grupo"></span>, tem <span id="qtd-letras"></span> letras e começa com <span id="initial-letter"></span></h4>
+                <div class="buttons1">
+                    <h4>Digite seu palpite aqui: <input id="palpite"></h4>
+                    <button onclick="confirmar()">confirmar</button>
+                </div>
+                <h4>A palavra escolhida é: <span id="palavraEscolhida"></span></h4>
+                <h4 id="resultado"></h4>
+            </div>
+            <div class="buttons">
+                <button id="button1" onclick="gerarFrutas()">frutas</button>
+                <button id="button2" onclick="gerarObjetosEscolares()">objetos escolares</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
